@@ -1,9 +1,20 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import { Modal } from "@/components/ui/modal";
+import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
+const SetupPage = () => {
     return (
-        <div className="flex justify-center items-center p-4">
-            <Button size="default" variant="destructive">Click me</Button>
-        </div>
+            <div className="p-4">
+                <Modal
+                    title="Test"
+                    description="Test Description"
+                    isOpen
+                    onClose={()=>{}}
+                >
+                    Children
+                </Modal>
+            </div>
     )
   } 
+
+export default SetupPage;
