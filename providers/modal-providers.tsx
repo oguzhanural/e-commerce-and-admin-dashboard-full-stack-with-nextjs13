@@ -6,13 +6,13 @@ import { StoreModal } from "@/components/modals/store-modal";
 
 
 export const ModalProvider = () => {
-    const [isMouted, setIsMouted] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
-      setIsMouted(true)
+      setIsMounted(true)
     }, []);
     
-    if (!isMouted) {
+    if (!isMounted) {
         // this meaning is we are in server side. we are not going to render any modal server side
         return null;
     }
