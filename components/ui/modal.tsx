@@ -2,7 +2,7 @@
 
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
-//shadcn/ui dialog component burada daha standart hale getireceğiz.
+//shadcn/ui dialog component'ı burada daha standart hale getireceğiz.
 
 interface ModalProps {
     title: string;
